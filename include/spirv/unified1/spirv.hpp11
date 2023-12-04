@@ -1715,6 +1715,9 @@ enum class Op : unsigned {
     OpPtrEqual = 401,
     OpPtrNotEqual = 402,
     OpPtrDiff = 403,
+    OpConvergenceEntry = 404,
+    OpConvergenceLoop = 405,
+    OpConvergenceAnchor = 406,
     OpColorAttachmentReadEXT = 4160,
     OpDepthAttachmentReadEXT = 4161,
     OpStencilAttachmentReadEXT = 4162,
@@ -2449,6 +2452,9 @@ inline void HasResultAndType(Op opcode, bool *hasResult, bool *hasResultType) {
     case Op::OpPtrEqual: *hasResult = true; *hasResultType = true; break;
     case Op::OpPtrNotEqual: *hasResult = true; *hasResultType = true; break;
     case Op::OpPtrDiff: *hasResult = true; *hasResultType = true; break;
+    case Op::OpConvergenceEntry: *hasResult = true; *hasResultType = false; break
+    case Op::OpConvergenceLoop: *hasResult = true; *hasResultType = false; break
+    case Op::OpConvergenceAnchor: *hasResult = true; *hasResultType = false; break
     case Op::OpColorAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;
     case Op::OpDepthAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;
     case Op::OpStencilAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;

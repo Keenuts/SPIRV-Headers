@@ -4393,6 +4393,37 @@
       "version" : "1.4"
     },
     {
+      "opname" : "OpConvergenceEntry",
+      "class"  : "Control-Flow",
+      "opcode" : 404,
+      "operands" : [
+        { "kind" : "IdResult" }
+      ],
+      "capabilities" : [ ],
+      "version" : "1.0"
+    },
+    {
+      "opname" : "OpConvergenceLoop",
+      "class"  : "Control-Flow",
+      "opcode" : 405,
+      "operands" : [
+        { "kind" : "IdResult" },
+        { "kind" : "IdRef", "name" : "'convergence token'" }
+      ],
+      "capabilities" : [ ],
+      "version" : "1.0"
+    },
+    {
+      "opname" : "OpConvergenceAnchor",
+      "class"  : "Control-Flow",
+      "opcode" : 406,
+      "operands" : [
+        { "kind" : "IdResult" }
+      ],
+      "capabilities" : [ ],
+      "version" : "1.0"
+    },
+    {
       "opname" : "OpColorAttachmentReadEXT",
       "class"  : "Image",
       "opcode" : 4160,

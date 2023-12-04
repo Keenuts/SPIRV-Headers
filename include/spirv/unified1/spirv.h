@@ -1719,6 +1719,9 @@ typedef enum SpvOp_ {
     SpvOpPtrEqual = 401,
     SpvOpPtrNotEqual = 402,
     SpvOpPtrDiff = 403,
+    SpvOpConvergenceEntry = 404,
+    SpvOpConvergenceLoop = 405,
+    SpvOpConvergenceAnchor = 406,
     SpvOpColorAttachmentReadEXT = 4160,
     SpvOpDepthAttachmentReadEXT = 4161,
     SpvOpStencilAttachmentReadEXT = 4162,
@@ -2453,6 +2456,9 @@ inline void SpvHasResultAndType(SpvOp opcode, bool *hasResult, bool *hasResultTy
     case SpvOpPtrEqual: *hasResult = true; *hasResultType = true; break;
     case SpvOpPtrNotEqual: *hasResult = true; *hasResultType = true; break;
     case SpvOpPtrDiff: *hasResult = true; *hasResultType = true; break;
+    case SpvOpConvergenceEntry: *hasResult = true; *hasResultType = false; break
+    case SpvOpConvergenceLoop: *hasResult = true; *hasResultType = false; break
+    case SpvOpConvergenceAnchor: *hasResult = true; *hasResultType = false; break
     case SpvOpColorAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;
     case SpvOpDepthAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;
     case SpvOpStencilAttachmentReadEXT: *hasResult = true; *hasResultType = true; break;
