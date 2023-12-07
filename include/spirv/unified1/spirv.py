@@ -1662,6 +1662,7 @@ spv = {
         'OpConvergenceEntry' : 404,
         'OpConvergenceLoop' : 405,
         'OpConvergenceAnchor' : 406,
+        'OpConvergenceControl' : 407,
         'OpColorAttachmentReadEXT' : 4160,
         'OpDepthAttachmentReadEXT' : 4161,
         'OpStencilAttachmentReadEXT' : 4162,

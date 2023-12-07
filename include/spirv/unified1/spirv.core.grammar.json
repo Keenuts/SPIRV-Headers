@@ -4424,6 +4424,16 @@
       "version" : "1.0"
     },
     {
+      "opname" : "OpConvergenceControl",
+      "class"  : "Control-Flow",
+      "opcode" : 407,
+      "operands" : [
+        { "kind" : "IdRef", "name" : "'convergence token'" }
+      ],
+      "capabilities" : [ ],
+      "version" : "1.0"
+    },
+    {
       "opname" : "OpColorAttachmentReadEXT",
       "class"  : "Image",
       "opcode" : 4160,
