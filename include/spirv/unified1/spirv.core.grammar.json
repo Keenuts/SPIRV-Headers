@@ -4407,7 +4407,7 @@
       "class"  : "Control-Flow",
       "opcode" : 405,
       "operands" : [
-        { "kind" : "IdResult" },
+        { "kind" : "IdResult" }
       ],
       "capabilities" : [ ],
       "version" : "1.0"
