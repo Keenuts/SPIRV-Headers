@@ -4408,7 +4408,6 @@
       "opcode" : 405,
       "operands" : [
         { "kind" : "IdResult" },
-        { "kind" : "IdRef", "name" : "'convergence token'" }
       ],
       "capabilities" : [ ],
       "version" : "1.0"
