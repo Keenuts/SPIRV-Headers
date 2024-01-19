@@ -1393,6 +1393,7 @@ typedef enum SpvOp_ {
     SpvOpExtension = 10,
     SpvOpExtInstImport = 11,
     SpvOpExtInst = 12,
+    SpvOpExtInstWithForwardRefs = 404,
     SpvOpMemoryModel = 14,
     SpvOpEntryPoint = 15,
     SpvOpExecutionMode = 16,
@@ -2128,6 +2129,7 @@ inline void SpvHasResultAndType(SpvOp opcode, bool *hasResult, bool *hasResultTy
     case SpvOpExtension: *hasResult = false; *hasResultType = false; break;
     case SpvOpExtInstImport: *hasResult = true; *hasResultType = false; break;
     case SpvOpExtInst: *hasResult = true; *hasResultType = true; break;
+    case SpvOpExtInstWithForwardRefs: *hasResult = true; *hasResultType = true; break;
     case SpvOpMemoryModel: *hasResult = false; *hasResultType = false; break;
     case SpvOpEntryPoint: *hasResult = false; *hasResultType = false; break;
     case SpvOpExecutionMode: *hasResult = false; *hasResultType = false; break;

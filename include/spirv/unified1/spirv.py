@@ -1333,6 +1333,7 @@ spv = {
         'OpExtension' : 10,
         'OpExtInstImport' : 11,
         'OpExtInst' : 12,
+        'OpExtInstWithForwardRefs' : 404,
         'OpMemoryModel' : 14,
         'OpEntryPoint' : 15,
         'OpExecutionMode' : 16,

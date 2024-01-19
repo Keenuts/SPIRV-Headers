@@ -255,6 +255,19 @@
       "version": "1.0"
     },
     {
+      "opname" : "OpExtInstWithForwardRefs",
+      "class"  : "Extension",
+      "opcode" : 404,
+      "operands" : [
+        { "kind" : "IdResultType" },
+        { "kind" : "IdResult" },
+        { "kind" : "IdRef",                                     "name" : "'Set'" },
+        { "kind" : "LiteralExtInstInteger",                     "name" : "'Instruction'" },
+        { "kind" : "IdRef",                 "quantifier" : "*", "name" : "'Operand 1', +\n'Operand 2', +\n..." }
+      ],
+      "version": "1.5"
+    },
+    {
       "opname" : "OpMemoryModel",
       "class"  : "Mode-Setting",
       "opcode" : 14,

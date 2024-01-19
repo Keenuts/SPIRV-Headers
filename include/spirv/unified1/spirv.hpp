@@ -1389,6 +1389,7 @@ enum Op {
     OpExtension = 10,
     OpExtInstImport = 11,
     OpExtInst = 12,
+    OpExtInstWithForwardRefs = 404,
     OpMemoryModel = 14,
     OpEntryPoint = 15,
     OpExecutionMode = 16,
@@ -2124,6 +2125,7 @@ inline void HasResultAndType(Op opcode, bool *hasResult, bool *hasResultType) {
     case OpExtension: *hasResult = false; *hasResultType = false; break;
     case OpExtInstImport: *hasResult = true; *hasResultType = false; break;
     case OpExtInst: *hasResult = true; *hasResultType = true; break;
+    case OpExtInstWithForwardRefs: *hasResult = true; *hasResultType = true; break;
     case OpMemoryModel: *hasResult = false; *hasResultType = false; break;
     case OpEntryPoint: *hasResult = false; *hasResultType = false; break;
     case OpExecutionMode: *hasResult = false; *hasResultType = false; break;
